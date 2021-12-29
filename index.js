@@ -9,6 +9,7 @@ const email = document.querySelector('input[name="email"]');
 const password = document.querySelector('input[name="password"]');
 const cpassword = document.querySelector('input[name="cpassword"]');
 const submitted = document.querySelector('.submitted');
+const h1 = document.querySelector('.h1');
 let isFormValid = false;
 let isValidationOn = false;
 
@@ -71,6 +72,7 @@ form.addEventListener('submit', (e) => {
     if (isFormValid) {
         form.remove();
         submitted.classList.remove('hidden');
+        h1.classList.add('hidden');
     }
 
 
