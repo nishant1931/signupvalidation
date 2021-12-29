@@ -69,7 +69,7 @@ form.addEventListener('submit', (e) => {
     matchPasswords();
 
     if (isFormValid) {
-        alert('Submit');
+        form.remove();
         submitted.classList.remove('hidden');
     }
 
